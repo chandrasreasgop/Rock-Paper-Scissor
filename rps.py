@@ -1,6 +1,6 @@
 import random, sys
-choiceList, userScore, computerScore = ['R','P','S'], 0, 0
-userInput = input("\n\nType 'Exit' to quit the program or 'Play' to play the game.")
+
+# Ascii art variables: Rock, Paper, Scissor 
 rock = '''
     _______
 ---'   ____)
@@ -27,6 +27,21 @@ scissors = '''
       (____)
 ---.__(___)
 '''
+# Variables
+
+# List with Options for Computer to choose from.
+choiceList = ['R','P','S']
+
+# Stores User's Score.
+userScore = 0
+
+# Stores Computer's Score.
+computerScore = 0
+
+# Prompts the User with Instruction and Stores the Given Input for Game.
+userInput = input("\n\nType 'Exit' to quit the program or 'Play' to play the game.")
+
+# Main Game Loop
 while True:
     computerChoice = random.choice(choiceList)
     if userScore == 5 or computerScore == 5:
